@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Risa Yamamoto</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+    </style>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <wrapper class="wrapper">
+      <header>
+        <nav
+          class="navbar navbar-expand-lg p-0 position-fixed top-0 start-0 end-0 border-bottom border-4 z-2"
+        >
+          <div class="navigation container-fluid justify-content-end p-2">
+            <button
+              class="navbar-toggler collapsed nav-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <i class="toggler-icon"></i>
+            </button>
+            <div
+              class="collapse navbar-collapse justify-content-end"
+              id="navbarNavAltMarkup"
+            >
+              <div class="navbar-nav navi-menu">
+                <a class="nav-link active" aria-current="page" href="#home"
+                  >Home</a
+                >
+                <a class="nav-link" href="#about">About</a>
+                <a class="nav-link" href="#myprojects">MyProjects</a>
+                <a class="nav-link" href="#contact">Contact</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <main>
+        <section class="hero container d-md-flex pt-3" id="home">
+          <div class="hero-img">
+            <img src="/img/IMG_9465.jpg" alt="picture of myself" />
+          </div>
+          <div class="intro d-flex flex-column m-1">
+            <h1>Hi, I'm <span class="highlight">Risa</span>!</h1>
+            <p class="m-0">
+              ポートフォリオをご覧いただきありがとうございます。<br />
+              山元里紗と申します。1997年生まれです。<br />
+              システムエンジニアとして日本で3年間働き、<br />
+              現在はカナダのカレッジにてWeb開発を学んでいます。<br />
+              ご興味を持っていただけましたら、お気軽にご連絡ください。
+            </p>
+            <ul class="sns-list d-flex justify-md-content-start py-2 px-0">
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/risa-yamamoto-b0a5a9302/"
+                  target="_blank"
+                >
+                  <img src="./img/linkedin.svg" alt="linkedin"
+                /></a>
+              </li>
+              <li>
+                <a href="#contact" target="_blank">
+                  <img src="./img/envelope-solid.svg" alt="email"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="about container pt-3" id="about">
+          <div class="row myinformation">
+            <div class="techskills col-lg-6">
+              <h2 class="mb-4">Technical Skills</h2>
+              <div class="techskills">
+                <div class="skills">
+                  <p class="m-0">HTML</p>
+                  <div
+                    class="progress"
+                    role="progressbar"
+                    aria-label="Success "
+                    aria-valuenow="25"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    <div class="progress-bar" style="width: 90%"></div>
+                  </div>
+                </div>
+                <div class="skills pt-3">
+                  <p class="m-0">CSS</p>
+                  <div
+                    class="progress"
+                    role="progressbar"
+                    aria-label="Success "
+                    aria-valuenow="25"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    <div class="progress-bar" style="width: 70%"></div>
+                  </div>
+                </div>
+                <div class="skills pt-3">
+                  <p class="m-0">JavaScript</p>
+                  <div
+                    class="progress"
+                    role="progressbar"
+                    aria-label="Success "
+                    aria-valuenow="25"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    <div class="progress-bar" style="width: 60%"></div>
+                  </div>
+                </div>
+                <div class="skills pt-3">
+                  <p class="m-0">Sass</p>
+                  <div
+                    class="progress"
+                    role="progressbar"
+                    aria-label="Success "
+                    aria-valuenow="25"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    <div class="progress-bar" style="width: 70%"></div>
+                  </div>
+                </div>
+
+                <div class="skills pt-3">
+                  <p class="m-0">React</p>
+                  <div
+                    class="progress"
+                    role="progressbar"
+                    aria-label="Success "
+                    aria-valuenow="25"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    <div class="progress-bar" style="width: 50%"></div>
+                  </div>
+                </div>
+
+                <div class="skills pt-3">
+                  <p class="m-0">Astro</p>
+                  <div
+                    class="progress"
+                    role="progressbar"
+                    aria-label="Success "
+                    aria-valuenow="25"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    <div class="progress-bar" style="width: 50%"></div>
+                  </div>
+                </div>
+                <div class="skills pt-3">
+                  <p class="m-0">WordPress</p>
+                  <div
+                    class="progress"
+                    role="progressbar"
+                    aria-label="Success "
+                    aria-valuenow="25"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    <div class="progress-bar" style="width: 65%"></div>
+                  </div>
+                </div>
+                <div class="skills pt-3">
+                  <p class="m-0">C#</p>
+                  <div
+                    class="progress"
+                    role="progressbar"
+                    aria-label="Success "
+                    aria-valuenow="25"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    <div class="progress-bar" style="width: 70%"></div>
+                  </div>
+                </div>
+                <div class="skills pt-3">
+                  <p class="m-0">SQL</p>
+                  <div
+                    class="progress"
+                    role="progressbar"
+                    aria-label="Success "
+                    aria-valuenow="25"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    <div class="progress-bar" style="width: 65%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="work-experience col-lg-6 mt-5 mt-lg-0">
+              <h2 class="mb-4">Work Experience</h2>
+              <div class="experience">
+                <div class="first-experience d-flex">
+                  <div class="term">
+                    <p class="m-0">2021-2024</p>
+                  </div>
+                  <div class="detail d-flex flex-column">
+                    <p class="title m-0">システムエンジニア</p>
+                    <p class="company m-0">株式会社 ARS</p>
+                    <ul class="details m-0 pl-2">
+                      <li class="project-description">
+                        <p class="project-title">患者動線管理システム</p>
+                        <p class="project-detail">
+                          外来患者の動線管理システムの開発、テスト、導入、保守を担当しました。
+                          C#の実装スキルやSQLの操作に加え、システムを提供する上で必要な顧客とのコミュニケーション能力、説明能力を身につけました。
+                        </p>
+                      </li>
+                      <li class="project-description">
+                        <p class="project-title">POSシステム</p>
+                        <p>
+                          全国チェーン店で採用されているPOSのシステム更改に携わり、
+                          AWS
+                          Lambdaとの連携処理、クレジットカード決済処理の新規開発、単体テスト、結合テストを担当しました。
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row education-softskills mt-5 p-0">
+            <div class="education-line col-lg-6 z-1">
+              <h2 class="mb-4">Education</h2>
+              <ul class="timeline">
+                <li class="pb-3">
+                  <p class="terms p-0 m-0">2024/4 - 現在</p>
+                  <p class="institute p-0 m-0">
+                    Cornerstone International College of Canada
+                  </p>
+                  <p class="major company m-0 p-0">Web and App Development</p>
+                </li>
+                <li class="pt-2">
+                  <p class="terms m-0">2016/4 - 2021/3</p>
+                  <p class="institute p-0 m-0">鹿児島大学</p>
+                  <p class="major company m-0 p-0">法文学部 経済情報学科</p>
+                </li>
+              </ul>
+            </div>
+            <div class="softskills col-lg-6 mt-5 mt-lg-0">
+              <h2 class="mb-4">Qualification</h2>
+              <ul class="softskills-list d-flex p-0">
+                <li>TOEIC 915点</li>
+                <li>ITパスポート</li>
+              </ul>
+            </div>
+          </div>
+          <div class="row language-interests p-0 mt-5">
+            <div class="languages col-lg-6 mt-lg-0">
+              <h2 class="mb-4">Languages</h2>
+              <ul class="col-6 language-list d-flex">
+                <li class="jp">Japanese</li>
+                <li class="en">English</li>
+              </ul>
+            </div>
+            <div class="interests col-lg-6 mt-5 mt-lg-0">
+              <h2 class="mb-4">Interests</h2>
+              <ul class="interests-list d-flex p-0">
+                <li class="interest d-flex flex-column">
+                  <p>Reading</p>
+                  <div class="interest-img d-flex">
+                    <img src="./img/book.svg" alt="reading" />
+                  </div>
+                </li>
+                <li class="interest d-flex flex-column">
+                  <p>Cooking</p>
+                  <div class="interest-img d-flex">
+                    <img src="./img/cooking.svg" alt="reading" />
+                  </div>
+                </li>
+                <li class="interest d-flex flex-column">
+                  <p>Yoga</p>
+                  <div class="interest-img d-flex">
+                    <img src="./img/yoga.svg" alt="reading" />
+                  </div>
+                </li>
+                <li class="interest d-flex flex-column">
+                  <p>Running</p>
+                  <div class="interest-img d-flex">
+                    <img src="./img/running.svg" alt="reading" />
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <!-- projects for a larger screen-->
+        <section class="projects container p-0 pt-3" id="myprojects">
+          <h2 class="mt-5 mb-4 px-3">My Projects</h2>
+          <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+            crossorigin="anonymous"
+          />
+          <div
+            id="carouselControls"
+            class="carousel carousel-dark slide d-none d-lg-block"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div
+                  class="row card-wrapper container d-flex justify-content-around gx-3"
+                >
+                  <div class="col col-md-4">
+                    <div class="card p-0">
+                      <a
+                        class="link-underline-opacity-0"
+                        href="https://risa2422.github.io/trend-movie-app/"
+                        target="_blank"
+                      >
+                        <figure class="card-img-top">
+                          <img
+                            src="./img/movie-trend-app.png"
+                            alt="the third work"
+                          />
+                        </figure>
+                        <div class="card-body">
+                          <h5 class="card-title">Trend Movie App</h5>
+                          <p>
+                            最新の映画、テレビ番組の情報を取得するアプリを実装しました。
+                            ジャンル、表示言語のフィルタリングに加えタイトル名での検索も可能にしました。
+                          </p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col col-md-4">
+                    <div class="card p-0">
+                      <a
+                        class="link-underline-opacity-0"
+                        href="https://risa2422.github.io/interactive-card-details-form-main/"
+                        target="_blank"
+                      >
+                        <figure class="card-img-top">
+                          <img
+                            src="./img/desktop-design.jpg"
+                            alt="the first work"
+                          />
+                        </figure>
+                        <div class="card-body">
+                          <h5 class="card-title">
+                            Interactive card details form
+                          </h5>
+                          <p>
+                            クレジットカード情報登録フォームを想定し、UIを実装しました。
+                          </p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col col-md-4">
+                    <div class="card p-0">
+                      <a
+                        class="link-underline-opacity-0"
+                        href="https://risa2422.github.io/age-calculator-app/"
+                        target="_blank"
+                      >
+                        <figure class="card-img-top">
+                          <img
+                            src="./img/age-desktop-design.jpg"
+                            alt="the second work"
+                          />
+                        </figure>
+                        <div class="card-body">
+                          <h5 class="card-title">Age calculator app</h5>
+                          <p>年齢計算ツールを実装しました。</p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div
+                  class="row card-wrapper container-sm d-flex justify-content-around gx-3"
+                >
+                  <div class="col col-md-4">
+                    <div class="card p-0">
+                      <a
+                        class="link-underline-opacity-0"
+                        href="https://risa2422.github.io/social-proof-section/"
+                        target="_blank"
+                      >
+                        <figure class="card-img-top">
+                          <img
+                            src="./img/social-desktop-design.jpg"
+                            alt="the forth work"
+                          />
+                        </figure>
+                        <div class="card-body">
+                          <h5 class="card-title">Social proof section</h5>
+                          <p>
+                            企業のソーシャルプルーフセクションを想定し、UIを実装しました。
+                          </p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselControls"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselControls"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+          <!-- projects for a small screen-->
+          <div
+            id="carouselControlsSmall"
+            class="carousel carousel-dark slide d-lg-none"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div
+                  class="card-wrapper container-sm d-flex justify-content-around"
+                >
+                  <div class="card">
+                    <a
+                      class="link-underline-opacity-0"
+                      href="https://risa2422.github.io/trend-movie-app/"
+                      target="_blank"
+                    >
+                      <figure class="card-img-top">
+                        <img
+                          src="./img/movie-trend-app.png"
+                          alt="the third work"
+                        />
+                      </figure>
+                      <div class="card-body">
+                        <h5 class="card-title">Trend Movie App</h5>
+                        <p>
+                          最新の映画、テレビ番組の情報を取得するアプリを実装しました。
+                          ジャンル、表示言語のフィルタリングに加えタイトル名での検索も可能にしました。
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div
+                  class="card-wrapper container d-flex justify-content-around"
+                >
+                  <div class="card">
+                    <a
+                      class="link-underline-opacity-0 col-12"
+                      href="https://risa2422.github.io/interactive-card-details-form-main/"
+                      target="_blank"
+                    >
+                      <figure class="card-img-top">
+                        <img
+                          src="./img/desktop-design.jpg"
+                          alt="the first work"
+                        />
+                      </figure>
+                      <div class="card-body">
+                        <h5 class="card-title">
+                          Interactive card details form
+                        </h5>
+                        <p>
+                          クレジットカード情報登録フォームを想定し、UIを実装しました。
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div
+                  class="card-wrapper container-sm d-flex justify-content-around"
+                >
+                  <div class="card">
+                    <a
+                      class="link-underline-opacity-0"
+                      href="https://risa2422.github.io/age-calculator-app/"
+                      target="_blank"
+                    >
+                      <figure class="card-img-top">
+                        <img
+                          src="./img/age-desktop-design.jpg"
+                          alt="the second work"
+                        />
+                      </figure>
+                      <div class="card-body">
+                        <h5 class="card-title">Age calculator app</h5>
+                        <p>年齢計算ツールを実装しました。</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- <div class="carousel-item">
+                <div
+                  class="card-wrapper container-sm d-flex justify-content-around"
+                >
+                  <div class="card">
+                    <a
+                      class="link-underline-opacity-0"
+                      href="https://risa2422.github.io/trend-movie-app/"
+                      target="_blank"
+                    >
+                      <figure class="card-img-top">
+                        <img
+                          src="./img/movie-trend-app.png"
+                          alt="the third work"
+                        />
+                      </figure>
+                      <div class="card-body">
+                        <h5 class="card-title">Time tracking dashboard</h5>
+                        <p>
+                          最新の映画、テレビ番組の情報を取得するアプリを実装しました。
+                          ジャンル、表示言語のフィルタリングに加えタイトル名での検索も可能にしました。
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div> -->
+              <div class="carousel-item">
+                <div
+                  class="card-wrapper container-sm d-flex justify-content-around"
+                >
+                  <div class="card">
+                    <a
+                      class="link-underline-opacity-0"
+                      href="https://risa2422.github.io/social-proof-section/"
+                      target="_blank"
+                    >
+                      <figure class="card-img-top">
+                        <img
+                          src="./img/social-desktop-design.jpg"
+                          alt="the forth work"
+                        />
+                      </figure>
+                      <div class="card-body">
+                        <h5 class="card-title">Social proof section</h5>
+                        <p>
+                          企業のソーシャルプルーフセクションを想定し、UIを実装しました。
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselControlsSmall"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselControlsSmall"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </section>
+        <!-- contact -->
+        <div class="contact-wrap">
+          <section class="contact container mt-5" id="contact">
+            <h2 class="pt-4">Get in Touch</h2>
+            <form id="contact_form" method="post" onsubmit="return false">
+              <div class="name-and-email d-flex">
+                <div class="name form-input flex-fill">
+                  <label for="name" class="mb-1">Name</label>
+                  <span class="required">*</span>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    name="name"
+                    placeholder="Jane"
+                    tabindex="1"
+                  />
+                  <span
+                    class="alert name-alert alert-primary invisible"
+                    role="alert"
+                  >
+                  </span>
+                </div>
+                <div class="email form-input flex-fill">
+                  <label for="email" class="mb-1">Email address</label>
+                  <span class="required">*</span>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="email"
+                    name="email"
+                    aria-describedby="emailHelp"
+                    placeholder="email@email.com"
+                    tabindex="2"
+                  />
+                  <span
+                    class="alert email-alert alert-primary invisible"
+                    role="alert"
+                  >
+                  </span>
+                </div>
+              </div>
+              <div class="messsage form-input mt-3 mb-4">
+                <label for="messsage" class="mb-1">Your message</label>
+                <span class="required">*</span>
+                <textarea
+                  id="message"
+                  class="form-control message-area"
+                  name="message"
+                  rows="4"
+                  cols="70"
+                  tabindex="3"
+                ></textarea>
+                <span
+                  class="alert message-alert alert-primary invisible"
+                  role="alert"
+                >
+                </span>
+              </div>
+              <div class="submit-button mt-3 pb-5">
+                <button type="submit" tabindex="4">Submit</button>
+              </div>
+            </form>
+          </section>
+        </div>
+      </main>
+    </wrapper>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script src="./app.js"></script>
+  </body>
+</html>

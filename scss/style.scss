@@ -1,0 +1,574 @@
+@import "./partials/variables";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+body {
+  font-family: $font-lato;
+}
+
+.g-3,
+.gx-3 {
+  --bs-gutter-x: 3rem;
+}
+
+.wrapper {
+  .navbar {
+    border-color: $color-asparagus !important;
+
+    .navigation {
+      background-color: $color-tomthumb;
+
+      .nav-button {
+        border-color: rgba(0, 0, 0, 0);
+        box-shadow: none;
+        width: 50px;
+        padding: 0;
+
+        .toggler-icon {
+          display: inline-block;
+          width: 20px;
+          height: 20px;
+          background-image: url(../img/menu_24dp_FILL0_wght400_GRAD0_opsz24.svg);
+        }
+      }
+
+      .navi-menu {
+        display: flex;
+        padding-right: 25px;
+        gap: 7px;
+        font-family: $font-inika;
+        font-weight: 100;
+        font-size: 16px;
+
+        a {
+          color: $color-alto;
+
+          &:hover {
+            color: $color-springwood;
+          }
+        }
+      }
+    }
+  }
+
+  main {
+    background-color: $color-springwood;
+    padding-top: 130px;
+
+    @media (max-width: $screen-size-small) {
+      padding-top: 50px;
+    }
+
+    .hero {
+      gap: 3rem;
+      padding-bottom: 10px;
+
+      @media (max-width: $screen-size-small) {
+        padding-bottom: 30px;
+      }
+
+      .hero-img {
+        flex: 0 0 380px;
+
+        @media (max-width: $screen-size-large) {
+          flex: 0 0 300px;
+        }
+
+        @media (max-width: $screen-size-small) {
+          height: 300px;
+          width: 300px;
+          margin: 20px auto;
+        }
+
+        img {
+          max-width: 100%;
+          width: auto;
+          border-radius: 40% 20% 40% 20%;
+          border: $color-tomthumb 1px solid;
+        }
+      }
+
+      .intro {
+        flex: 1;
+        justify-content: center;
+
+        h1 {
+          font-family: $font-inrea;
+          font-weight: 700;
+          font-size: 60px;
+          letter-spacing: 1px;
+
+          @media (max-width: $screen-size-small) {
+            text-align: center;
+            font-size: 40px;
+          }
+
+          .highlight {
+            text-decoration: underline;
+            text-decoration-thickness: 0.3em;
+            text-decoration-color: rgba(233, 210, 3, 0.4);
+            text-underline-offset: -0.2em;
+            text-decoration-skip-ink: none;
+          }
+        }
+
+        p {
+          font-size: 15px;
+          line-height: 30px;
+
+          @media (max-width: $screen-size-small) {
+            text-align: center;
+            font-size: 12px;
+          }
+        }
+
+        .sns-list {
+          margin-top: 10px;
+          gap: 1.5rem;
+
+          @media (max-width: $screen-size-small) {
+            justify-content: center;
+          }
+
+          li {
+            width: 35px;
+
+            @media (max-width: $screen-size-small) {
+              width: 30px;
+            }
+
+            img {
+              height: 100%;
+              transition: 0.3s;
+
+              &:hover {
+                opacity: 0.5;
+              }
+            }
+          }
+        }
+      }
+    }
+    .about {
+      .myinformation {
+        margin-top: 50px;
+        @media (max-width: $screen-size-small) {
+          margin-top: 50px;
+        }
+
+        h2 {
+          font-family: $font-inika;
+          color: $color-tomthumb;
+        }
+
+        .techskills {
+          .skills {
+            display: flex;
+            align-items: center;
+
+            p {
+              width: 120px;
+              font-weight: 500;
+              width: 90px;
+            }
+
+            .progress {
+              width: 70%;
+              border-radius: 30px;
+              height: 20px;
+              overflow: hidden;
+              background-color: $color-alto;
+
+              .progress-bar {
+                border-radius: 30px;
+                transition: width 1s ease-in-out;
+                animation: progress-bar 2s forwards linear;
+                background-color: $color-tomthumb;
+                opacity: 0.9;
+
+                @keyframes progress-bar {
+                  0% {
+                    width: 0%;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .work-experience {
+          border-left: 1px $color-dovegray solid;
+
+          @media (max-width: $screen-size-small) {
+            margin-top: 50px;
+            border-left: none;
+          }
+
+          .term {
+            padding-right: 10px;
+
+            p {
+              width: 5rem;
+              font-size: 14px;
+              font-weight: 300;
+              color: $color-boulder;
+            }
+          }
+
+          .title {
+            font-weight: 600;
+            font-size: 15px;
+          }
+
+          .company {
+            font-size: 13px;
+            color: $color-boulder;
+            font-style: italic;
+          }
+
+          .details {
+            font-size: 13.5px;
+            font-family: $font-inika;
+
+            .project-description {
+              padding-top: 10px;
+              list-style: square;
+
+              .project-title {
+                margin: 0;
+                font-weight: 500;
+                font-size: 14px;
+              }
+              .project-detail {
+                padding-top: 10px;
+                font-size: 13px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .education-softskills {
+      .education-line {
+        @media (max-width: $screen-size-large) {
+          border-left: 1px $color-dovegray solid;
+        }
+
+        @media (max-width: $screen-size-small) {
+          border-left: none;
+        }
+
+        h2 {
+          font-family: $font-inika;
+          color: $color-tomthumb;
+        }
+
+        .terms {
+          font-size: 13px;
+          color: $color-boulder;
+        }
+
+        .institute {
+          font-size: 15px;
+        }
+
+        .major {
+          font-size: 13px;
+          color: $color-boulder;
+        }
+
+        ul.timeline {
+          list-style-type: none;
+          position: relative;
+        }
+
+        ul.timeline:before {
+          content: " ";
+          background: $color-mischka;
+          display: inline-block;
+          position: absolute;
+          left: 8px;
+          width: 2px;
+          height: 60%;
+          z-index: 400;
+        }
+
+        ul.timeline > li:before {
+          content: " ";
+          background: $color-dovegray;
+          display: inline-block;
+          position: absolute;
+          border-radius: 50%;
+          left: 4px;
+          width: 10px;
+          height: 10px;
+          z-index: 400;
+        }
+      }
+
+      .softskills {
+        border-left: 1px $color-dovegray solid;
+
+        @media (max-width: $screen-size-small) {
+          border-left: none;
+        }
+
+        h2 {
+          font-family: $font-inika;
+          color: $color-tomthumb;
+        }
+
+        .softskills-list {
+          flex-wrap: wrap;
+          gap: 10px;
+          justify-content: start;
+
+          li {
+            justify-content: start;
+            font-size: 14px;
+            align-items: center;
+            border: 1px $color-springwood solid;
+            border-radius: 20px;
+            padding: 10px 15px;
+            line-height: 14px;
+            background-color: $color-asparagus;
+            color: $color-springwood;
+            font-family: $font-inika;
+          }
+        }
+      }
+    }
+
+    .language-interests {
+      .languages {
+        @media (max-width: $screen-size-large) {
+          // border-left: 1px $color-boulder solid;
+        }
+
+        h2 {
+          font-family: $font-inika;
+          color: $color-tomthumb;
+        }
+
+        .language-list {
+          gap: 10px;
+          padding-left: 0;
+
+          li {
+            border: 1px $color-springwood solid;
+            border-radius: 20px;
+            width: 8rem;
+            padding: 10px 15px;
+            line-height: 14px;
+            text-align: center;
+            background-color: $color-asparagus;
+            color: $color-springwood;
+            font-family: $font-inika;
+
+            &.en {
+              background-color: $color-viridiangreen;
+            }
+
+            &.jp {
+              background-color: $color-terracotta;
+            }
+          }
+        }
+      }
+
+      .interests {
+        border-left: 1px $color-dovegray solid;
+        @media (max-width: $screen-size-large) {
+          border-left: none;
+        }
+
+        h2 {
+          font-family: $font-inika;
+          color: $color-tomthumb;
+        }
+
+        .interests-list {
+          gap: 40px;
+
+          p {
+            margin-top: 0;
+            margin-bottom: 8px;
+            font-size: 13px;
+            text-align: center;
+          }
+
+          .interest-img {
+            justify-content: center;
+            flex: 0 0 40px;
+
+            img {
+              max-width: 100%;
+              width: auto;
+              height: 40px;
+            }
+          }
+        }
+      }
+    }
+
+    .projects {
+      @media (max-width: $screen-size-small) {
+        margin-top: 50px;
+      }
+
+      h2 {
+        font-family: $font-inika;
+        color: $color-tomthumb;
+      }
+
+      .card {
+        max-width: 400px;
+        width: 100%;
+        a {
+          text-decoration: none;
+          color: $color-black;
+        }
+
+        figure {
+          width: 100%;
+          height: 250px;
+          overflow: hidden;
+          max-width: 400px;
+
+          @media (min-width: $screen-size-small) {
+            height: 190px;
+          }
+
+          img {
+            width: 100%;
+            object-fit: cover;
+            object-position: center center;
+          }
+        }
+
+        .card-body {
+          height: 150px;
+          .card-title {
+            font-size: 21px;
+          }
+
+          p {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+    .carousel-control-prev,
+    .carousel-control-next {
+      width: 15px;
+      color: $color-springwood;
+      font-size: 5px;
+    }
+  }
+
+  .contact-wrap {
+    margin-top: 100px;
+    background-color: $color-tomthumb;
+    color: $color-springwood;
+    width: 100%;
+
+    .contact {
+      h2 {
+        font-family: $font-inika;
+      }
+
+      p {
+        font-size: 14px;
+        font-weight: 300;
+      }
+
+      .name-and-email {
+        gap: 10px;
+
+        input {
+          background-color: $color-springwood;
+        }
+
+        .name {
+          width: 200px;
+        }
+
+        .email {
+          width: 200px;
+        }
+
+        .form-input {
+          position: relative;
+          .form-control::placeholder {
+            position: absolute;
+            font-size: 12px;
+          }
+        }
+      }
+
+      .message-area {
+        background-color: $color-springwood;
+      }
+
+      .alert {
+        height: 20px;
+        padding: 1px 4px;
+        margin: 5px 0 0 0;
+        display: inline-block;
+        width: 100%;
+        border: none;
+        border-radius: 5px;
+        color: $color-roman;
+        font-size: 1rem;
+        background-color: transparent;
+      }
+
+      .invisible {
+        display: none;
+      }
+
+      .required {
+        padding-left: 1px;
+        color: $color-terracotta;
+      }
+
+      .submit-button {
+        background-color: $color-tomthumb;
+
+        button {
+          border-radius: 8px;
+          border: 0.6px $color-white solid;
+          color: $color-white;
+          text-align: center;
+          width: 100%;
+          height: 40px;
+          transition: all 0.7s ease;
+          background-color: rgb(102, 117, 106, 0.5);
+          font-weight: 200;
+
+          &:hover {
+            background-color: $color-corduroy;
+          }
+
+          &.success {
+            border: 0.6px $color-christine solid;
+            color: $color-white;
+            background-color: rgb(231, 111, 15, 0.8);
+          }
+
+          &.failed {
+            border: 0.6px $color-royalblue solid;
+            color: $color-white;
+            background-color: $color-royalblue;
+          }
+        }
+      }
+    }
+  }
+}
