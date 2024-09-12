@@ -9,7 +9,7 @@ window.onload = function () {
 };
 
 emailjs.init({
-  publicKey: "xSEOQGryYtK6bWHTm",
+  publicKey: "",
 });
 
 // Entered a submit button
