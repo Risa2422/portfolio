@@ -9,10 +9,10 @@ window.onload = function () {
 };
 
 emailjs.init({
-  publicKey: "",
+  publicKey: "xSEOQGryYtK6bWHTm",
 });
 
-// Entered a submit button
+// Entered a submit button  
 form.addEventListener("submit", handleSubmit);
 
 // Clicked a submit button
