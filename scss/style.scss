@@ -73,7 +73,7 @@ body {
       }
 
       .hero-img {
-        flex: 0 0 380px;
+        flex: 0 0 45%;
 
         @media (max-width: $screen-size-large) {
           flex: 0 0 300px;
@@ -155,12 +155,11 @@ body {
       }
     }
     .about {
+      margin-top: 100px;
+      @media (max-width: $screen-size-small) {
+        margin-top: 10px;
+      }
       .myinformation {
-        margin-top: 50px;
-        @media (max-width: $screen-size-small) {
-          margin-top: 50px;
-        }
-
         h2 {
           font-family: $font-inika;
           color: $color-tomthumb;
@@ -418,10 +417,6 @@ body {
     }
 
     .projects {
-      @media (max-width: $screen-size-small) {
-        margin-top: 50px;
-      }
-
       h2 {
         font-family: $font-inika;
         color: $color-tomthumb;
@@ -437,7 +432,6 @@ body {
 
         figure {
           width: 100%;
-          height: 250px;
           overflow: hidden;
           max-width: 400px;
 
@@ -447,6 +441,7 @@ body {
 
           img {
             width: 100%;
+            height: 200px;
             object-fit: cover;
             object-position: center center;
           }

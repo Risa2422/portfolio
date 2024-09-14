@@ -65,7 +65,7 @@ body {
   }
 }
 .wrapper main .hero .hero-img {
-  flex: 0 0 380px;
+  flex: 0 0 45%;
 }
 @media (max-width: 992px) {
   .wrapper main .hero .hero-img {
@@ -142,12 +142,12 @@ body {
 .wrapper main .hero .intro .sns-list li img:hover {
   opacity: 0.5;
 }
-.wrapper main .about .myinformation {
-  margin-top: 50px;
+.wrapper main .about {
+  margin-top: 100px;
 }
 @media (max-width: 768px) {
-  .wrapper main .about .myinformation {
-    margin-top: 50px;
+  .wrapper main .about {
+    margin-top: 10px;
   }
 }
 .wrapper main .about .myinformation h2 {
@@ -360,11 +360,6 @@ body {
   width: auto;
   height: 40px;
 }
-@media (max-width: 768px) {
-  .wrapper main .projects {
-    margin-top: 50px;
-  }
-}
 .wrapper main .projects h2 {
   font-family: "Inika", serif;
   color: #344c36;
@@ -379,7 +374,6 @@ body {
 }
 .wrapper main .projects .card figure {
   width: 100%;
-  height: 250px;
   overflow: hidden;
   max-width: 400px;
 }
@@ -390,6 +384,7 @@ body {
 }
 .wrapper main .projects .card figure img {
   width: 100%;
+  height: 200px;
   object-fit: cover;
   object-position: center center;
 }
