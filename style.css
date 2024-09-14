@@ -56,7 +56,7 @@ body {
   }
 }
 .wrapper main .hero {
-  gap: 3rem;
+  gap: 6rem;
   padding-bottom: 10px;
 }
 @media (max-width: 768px) {
@@ -65,7 +65,7 @@ body {
   }
 }
 .wrapper main .hero .hero-img {
-  flex: 0 0 45%;
+  flex: 0 0 50%;
 }
 @media (max-width: 992px) {
   .wrapper main .hero .hero-img {

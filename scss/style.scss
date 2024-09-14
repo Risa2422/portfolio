@@ -65,7 +65,7 @@ body {
     }
 
     .hero {
-      gap: 3rem;
+      gap: 6rem;
       padding-bottom: 10px;
 
       @media (max-width: $screen-size-small) {
@@ -73,7 +73,7 @@ body {
       }
 
       .hero-img {
-        flex: 0 0 45%;
+        flex: 0 0 50%;
 
         @media (max-width: $screen-size-large) {
           flex: 0 0 300px;
